@@ -169,6 +169,8 @@
 -A INPUT -s 50.116.48.124/32 -p tcp -m tcp --dport 5060 -j ACCEPT
 -A INPUT -s 190.210.88.7/32 -p udp -m udp --dport 5060 -j ACCEPT
 -A INPUT -s 190.210.88.7/32 -p tcp -m tcp --dport 5060 -j ACCEPT
+-A INPUT -s 5.9.94.90/32 -p udp -m udp --dport 5060 -j ACCEPT
+-A INPUT -s 5.9.94.90/32 -p tcp -m tcp --dport 5060 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 5060 -j DROP
 -A INPUT -p udp -m udp --dport 5060 -j DROP
 -A INPUT -p udp -m string --string "VaxSIPUserAgent" --algo bm --to 65535 -j DROP
