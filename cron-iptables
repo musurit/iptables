@@ -1,0 +1,5 @@
+2 0 * * * /usr/bin/mv fw.rules fw.rules.old
+4 0 * * * /usr/bin/wget https://raw.githubusercontent.com/javiercappetta/fwfs/main/fw.rules
+15 0 * * * /sbin/reboot
+
+40 0 * * * /usr/bin/iptables-restore < fw.rules
