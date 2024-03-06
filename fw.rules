@@ -81,6 +81,8 @@
 -A INPUT -s 195.219.39.14/32 -p udp -m udp --dport 5060 -j ACCEPT
 -A INPUT -s 116.202.210.159/32 -p tcp -m tcp --dport 5060 -j ACCEPT
 -A INPUT -s 116.202.210.159/32 -p udp -m udp --dport 5060 -j ACCEPT
+-A INPUT -s 148.251.34.241/32 -p tcp -m tcp --dport 5060 -j ACCEPT
+-A INPUT -s 148.251.34.241/32 -p udp -m udp --dport 5060 -j ACCEPT
 -A INPUT -s 91.194.93.232/32 -p tcp -m tcp --dport 5060 -j ACCEPT
 -A INPUT -s 91.194.93.232/32 -p udp -m udp --dport 5060 -j ACCEPT
 -A INPUT -s 208.64.1.232/32 -p tcp -m tcp --dport 5060 -j ACCEPT
